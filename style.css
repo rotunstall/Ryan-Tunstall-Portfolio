@@ -1,17 +1,22 @@
 /* Box sizing rules */
+
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 
 /* Remove default padding */
+
 ul[class],
 ol[class] {
-	padding: 0;
+    padding: 0;
 }
 
+
 /* Remove default margin */
+
 body,
 h1,
 h2,
@@ -26,190 +31,215 @@ figcaption,
 blockquote,
 dl,
 dd {
-	margin: 0;
+    margin: 0;
 }
+
 
 /* Set core body defaults */
+
 body {
-	min-height: 100vh;
-	scroll-behavior: smooth;
-	text-rendering: optimizeSpeed;
-	line-height: 1.5;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
+
 
 /* Remove list styles on ul, ol elements with a class attribute */
+
 ul[class],
 ol[class] {
-	list-style: none;
+    list-style: none;
 }
+
 
 /* A elements that don't have a class get default styles */
+
 a:not([class]) {
-	text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
 }
+
 
 /* Make images easier to work with */
+
 img {
-	max-width: 100%;
-	display: block;
+    max-width: 100%;
+    display: block;
 }
+
 
 /* Natural flow and rhythm in articles by default */
-article > * + * {
-	margin-top: 1em;
+
+article>*+* {
+    margin-top: 1em;
 }
 
+
 /* Inherit fonts for inputs and buttons */
+
 input,
 button,
 textarea,
 select {
-	font: inherit;
+    font: inherit;
 }
+
 
 /* Remove all animations and transitions for people that prefer not to see them */
+
 @media (prefers-reduced-motion: reduce) {
-	* {
-		animation-duration: 0.01ms !important;
-		animation-iteration-count: 1 !important;
-		transition-duration: 0.01ms !important;
-		scroll-behavior: auto !important;
-	}
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
+
 /*======================================================*/
+
+
 /*======================================================*/
+
+
 /*======================================================*/
+
 body {
-	font-family: 'Lora', Serif;
-  font-size: 16px;
-  background-color: #ffeede;  
+    font-family: 'Lora', Serif;
+    font-size: 16px;
+    background-color: #ffeede;
 }
 
 h1,
 h2,
 h3 {
-	font-family: 'Oswald', Sans-Serif;
+    font-family: 'Oswald', Sans-Serif;
 }
 
 .header {
-  padding: 20px;
-  display: grid;
-  background-color: #bd4108;  
+    padding: 20px;
+    display: grid;
+    background-color: #bd4108;
 }
 
 .primary-image {
-  justify-self: center;
-  border-radius: 50%;
-  -webkit-box-shadow: 5px 9px 15px 12px rgba(0,0,0,0.17);
-  -moz-box-shadow: 5px 9px 15px 12px rgba(0,0,0,0.17);
-  box-shadow: 5px 9px 15px 12px rgba(0,0,0,0.30);
-  margin-bottom: 20px;
+    justify-self: center;
+    border-radius: 50%;
+    -webkit-box-shadow: 5px 9px 15px 12px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 5px 9px 15px 12px rgba(0, 0, 0, 0.17);
+    box-shadow: 5px 9px 15px 12px rgba(0, 0, 0, 0.30);
+    margin-bottom: 20px;
 }
 
-.header-text, .intro {
-  color: #ffeede;
+.header-text,
+.intro {
+    color: #ffeede;
 }
 
-.name, .title {
-  text-align: center;
+p.intro {
+    margin-bottom: 20px;
+}
+
+.name,
+.title {
+    text-align: center;
 }
 
 .title {
-  margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .info-wrapper {
-  padding: 20px;
+    padding: 20px;
 }
 
 .section-title {
-  color: #bd4108;
+    color: #bd4108;
 }
 
-.about-me, .experience, .skills{
-  margin-bottom: 15px;
+.about-me,
+.experience,
+.skills {
+    margin-bottom: 15px;
 }
 
-.position, .employer {
-  color: #282828;
-  font-weight: bold;
+.position,
+.employer {
+    color: #282828;
+    font-weight: bold;
 }
 
-p, li{
-  color: #4b4b4b;
+p,
+li {
+    color: #4b4b4b;
 }
 
 .dates {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
+
 /*======================================================*/
+
+
 /*======================================================*/
+
+
 /*======================================================*/
+
 @media screen and (min-width: 450px) {
-  .info-wrapper {
-    display: grid;
-    grid-template-areas:
-      'about about'  
-      'exper exper'    
-      'skills next';
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .about-me {
-    grid-area: about;
-  }
-
-  .experience {
-    grid-area: exper;
-  }
-
-  .skills {
-    grid-area: skills;
-  }
-
-  .whats-next {
-    grid-area: next;
-  }
-
+    .info-wrapper {
+        display: grid;
+        grid-template-areas: 'about about' 'exper exper' 'skills next';
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-me {
+        grid-area: about;
+    }
+    .experience {
+        grid-area: exper;
+    }
+    .skills {
+        grid-area: skills;
+    }
+    .whats-next {
+        grid-area: next;
+    }
 }
 
 
 /*======================================================*/
+
+
 /*======================================================*/
+
+
 /*======================================================*/
+
 @media screen and (min-width: 865px) {
-  .container {
-    display: grid;
-    grid-template-areas:
-      'header info';
-    grid-template-columns: 1fr 1fr;
-    max-width: 1360px;
-    min-height: 100vh;
-    margin: auto;
-  }
-
-  .header {
-    grid-area: header;
-  }
-
-  .primary-image {
-    justify-self: right;
-    align-self: flex-end;
-
-  }
-
-  .name, .title, .intro {
-    text-align: right;
-  }
-
-  .info-wrapper {
-    grid-area: info;  
-    grid-template-areas:
-      'exper exper'
-      'about about'
-      'skills next';
-  }
-
+    .container {
+        display: grid;
+        grid-template-areas: 'header info';
+        grid-template-columns: 1fr 1fr;
+        max-width: 1360px;
+        min-height: 100vh;
+        margin: auto;
+    }
+    .header {
+        grid-area: header;
+    }
+    .primary-image {
+        justify-self: right;
+        align-self: flex-end;
+    }
+    .name,
+    .title,
+    .intro {
+        text-align: right;
+    }
+    .info-wrapper {
+        grid-area: info;
+        grid-template-areas: 'exper exper' 'about about' 'skills next';
+    }
 }
