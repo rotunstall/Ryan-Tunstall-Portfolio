@@ -165,7 +165,7 @@ li {
 .email a,
 .phone a {
 	font-weight: 900;
-	color: #00477c;
+	color: #1146a8;
 	/* color: #107030; */
 	/* text-decoration: none; */
 }
@@ -210,7 +210,7 @@ li {
 }
 
 .live-site {
-	background-color: #107030;
+	background-color: #76a800;
 	border-radius: 6px;
 	display: inline-block;
 	cursor: pointer;
@@ -223,11 +223,11 @@ li {
 	margin-right: 5px;
 }
 .live-site:hover {
-	background-color: #1b873f;
+	background-color: #88c200;
 }
 
 .site-code {
-	background-color: #104670;
+	background-color: #1146a8;
 	border-radius: 6px;
 	display: inline-block;
 	cursor: pointer;
@@ -239,7 +239,7 @@ li {
 	text-decoration: none;
 }
 .site-code:hover {
-	background-color: #1b5f93;
+	background-color: #1556cf;
 }
 
 /*======================================================*/
@@ -249,9 +249,8 @@ li {
 @media screen and (min-width: 450px) {
 	.info-wrapper {
 		display: grid;
-		grid-template-areas:
-			"about about" "contact contact" "exper exper" "skills skills"
-			"next next" "projects projects";
+		grid-template-areas: "about about" "contact contact" "exper exper" "skills skills" "next next"
+			"projects projects";
 		grid-template-columns: 1fr 1fr;
 	}
 	.about-me {
