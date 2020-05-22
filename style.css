@@ -249,8 +249,8 @@ li {
 @media screen and (min-width: 450px) {
 	.info-wrapper {
 		display: grid;
-		grid-template-areas: "about about" "contact contact" "exper exper" "skills skills" "next next"
-			"projects projects";
+		grid-template-areas: "contact contact" "exper exper" "skills skills" "next next" "projects projects"
+			"about about";
 		grid-template-columns: 1fr 1fr;
 	}
 	.about-me {
@@ -342,7 +342,7 @@ li {
 @media screen and (min-width: 980px) {
 	.info-wrapper {
 		grid-area: info;
-		grid-template-areas: "exper exper" "about about" "contact contact" "skills next" "projects projects";
+		grid-template-areas: "exper exper" "contact contact" "skills next" "projects projects" "about about";
 	}
 }
 
