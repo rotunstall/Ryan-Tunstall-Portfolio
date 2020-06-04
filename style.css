@@ -165,11 +165,7 @@ li {
 .email a,
 .phone a {
 	font-weight: 900;
-<<<<<<< HEAD
 	color: rgb(17, 70, 168);
-=======
-	color: #1146a8;
->>>>>>> c47fa27182fd44adfc18fd5196f66a9c72da2997
 	/* color: #107030; */
 	/* text-decoration: none; */
 }
@@ -214,11 +210,7 @@ li {
 }
 
 .live-site {
-<<<<<<< HEAD
 	background-color: rgb(118, 168, 0);
-=======
-	background-color: #76a800;
->>>>>>> c47fa27182fd44adfc18fd5196f66a9c72da2997
 	border-radius: 6px;
 	display: inline-block;
 	cursor: pointer;
@@ -231,19 +223,11 @@ li {
 	margin-right: 5px;
 }
 .live-site:hover {
-<<<<<<< HEAD
 	background-color: rgb(136, 194, 0);
 }
 
 .site-code {
 	background-color: rgb(17, 70, 168);
-=======
-	background-color: #88c200;
-}
-
-.site-code {
-	background-color: #1146a8;
->>>>>>> c47fa27182fd44adfc18fd5196f66a9c72da2997
 	border-radius: 6px;
 	display: inline-block;
 	cursor: pointer;
@@ -255,11 +239,7 @@ li {
 	text-decoration: none;
 }
 .site-code:hover {
-<<<<<<< HEAD
 	background-color: rgb(21, 86, 207);
-=======
-	background-color: #1556cf;
->>>>>>> c47fa27182fd44adfc18fd5196f66a9c72da2997
 }
 
 /*======================================================*/
@@ -269,14 +249,9 @@ li {
 @media screen and (min-width: 450px) {
 	.info-wrapper {
 		display: grid;
-<<<<<<< HEAD
 		grid-template-areas:
 			"exper exper" "contact contact" "skills skills"
 			"next next" "projects projects" "about about";
-=======
-		grid-template-areas: "contact contact" "exper exper" "skills skills" "next next" "projects projects"
-			"about about";
->>>>>>> c47fa27182fd44adfc18fd5196f66a9c72da2997
 		grid-template-columns: 1fr 1fr;
 	}
 	.about-me {
