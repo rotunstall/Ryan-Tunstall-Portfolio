@@ -162,6 +162,8 @@ li {
 .dates {
 	margin-bottom: 10px;
 }
+.linked-in a,
+.github a,
 .email a,
 .phone a {
 	font-weight: 900;
