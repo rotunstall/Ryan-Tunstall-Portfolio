@@ -1,20 +1,18 @@
 /* Box sizing rules */
-
 *,
 *::before,
 *::after {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 /* Remove default padding */
-
 ul[class],
 ol[class] {
 	padding: 0;
 }
 
 /* Remove default margin */
-
 body,
 h1,
 h2,
@@ -33,42 +31,36 @@ dd {
 }
 
 /* Set core body defaults */
-
 body {
 	min-height: 100vh;
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
-	line-height: 1.5;
+	line-height: 1;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
-
 ul[class],
 ol[class] {
 	list-style: none;
 }
 
 /* A elements that don't have a class get default styles */
-
 a:not([class]) {
 	text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
-
 img {
 	max-width: 100%;
 	display: block;
 }
 
 /* Natural flow and rhythm in articles by default */
-
 article > * + * {
 	margin-top: 1em;
 }
 
 /* Inherit fonts for inputs and buttons */
-
 input,
 button,
 textarea,
@@ -77,11 +69,13 @@ select {
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
-
 @media (prefers-reduced-motion: reduce) {
 	* {
+		-webkit-animation-duration: 0.01ms !important;
 		animation-duration: 0.01ms !important;
+		-webkit-animation-iteration-count: 1 !important;
 		animation-iteration-count: 1 !important;
+		-webkit-transition-duration: 0.01ms !important;
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
 	}
@@ -90,10 +84,24 @@ select {
 /*======================================================*/
 /*======================================================*/
 /*======================================================*/
+/* ============ VARIABLES ============ */
+/* ============ COLORS ============ */
+/* OBSIDIAN */
+/* BLUE */
+/* Lighter BLUE */
+/* ORANGE Vibrant*/
+/* ORANGE Subdued*/
+/* TEAL*/
+/* MAROON */
+/* GREEN */
+/* ============ FONTS ============ */
+html {
+	font-size: 62.5%;
+}
 
 body {
-	font-family: "Lora", Serif;
-	font-size: 16px;
+	font-family: "Merriweather", serif;
+	font-weight: 300;
 	background-color: #ffeede;
 }
 
@@ -105,15 +113,16 @@ h3 {
 
 .header {
 	padding: 20px;
+	display: -ms-grid;
 	display: grid;
 	background-color: #bd4108;
 }
 
 .primary-image {
+	-ms-grid-column-align: center;
 	justify-self: center;
 	border-radius: 50%;
 	-webkit-box-shadow: 5px 9px 15px 12px rgba(0, 0, 0, 0.17);
-	-moz-box-shadow: 5px 9px 15px 12px rgba(0, 0, 0, 0.17);
 	box-shadow: 5px 9px 15px 12px rgba(0, 0, 0, 0.3);
 	margin-bottom: 20px;
 }
@@ -130,10 +139,18 @@ p.intro {
 .name,
 .title {
 	text-align: center;
+	font-family: "Oswald", Sans-Serif;
+}
+
+.name {
+	font-size: 3.2rem;
+	line-height: 1;
 }
 
 .title {
 	margin-bottom: 12px;
+	font-size: 1.9rem;
+	line-height: 1.7;
 }
 
 .info-wrapper {
@@ -142,6 +159,8 @@ p.intro {
 
 .section-title {
 	color: #bd4108;
+	font-size: 2.75rem;
+	margin-bottom: 6px;
 }
 
 .info-wrapper section {
@@ -150,30 +169,43 @@ p.intro {
 
 .position,
 .employer {
-	color: #282828;
+	color: #323232;
 	font-weight: bold;
+	font-size: 1.6rem;
 }
 
 p,
 li {
 	color: #4b4b4b;
+	font-size: 1.5rem;
+	line-height: 1.5;
 }
 
+.location,
 .dates {
+	line-height: 1.4;
+}
+
+.experience ol {
 	margin-bottom: 10px;
 }
+
+.experience li {
+	list-style: initial;
+	margin-left: 30px;
+}
+
 .linked-in a,
 .github a,
 .email a,
 .phone a {
 	font-weight: 900;
-	color: rgb(17, 70, 168);
-	/* color: #107030; */
-	/* text-decoration: none; */
+	color: #1146a8;
 }
 
 .address .lead-text {
 	font-weight: 700;
+	color: #323232;
 }
 
 .projects .section-title {
@@ -181,20 +213,27 @@ li {
 }
 
 .projects-container {
+	display: -ms-grid;
 	display: grid;
 	gap: 12px 15px;
 }
 
 .project-wrapper {
+	display: -ms-grid;
 	display: grid;
-
+	-ms-grid-rows: auto 1fr auto;
 	grid-template-rows: auto 1fr auto;
 	margin-bottom: 10px;
 	border: #e6d6c4 solid 5px;
 	border-radius: 7px;
 	padding: 5px;
 	background-color: #e6d6c4;
+	-webkit-box-shadow: 10px 10px 8px -6px rgba(75, 75, 75, 0.28);
 	box-shadow: 10px 10px 8px -6px rgba(75, 75, 75, 0.28);
+}
+
+.project-title {
+	font-size: 1.6rem;
 }
 
 .project-description {
@@ -207,12 +246,16 @@ li {
 }
 
 .btn-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 
 .live-site {
-	background-color: rgb(118, 168, 0);
+	background-color: #76a800;
 	border-radius: 6px;
 	display: inline-block;
 	cursor: pointer;
@@ -224,12 +267,13 @@ li {
 	text-decoration: none;
 	margin-right: 5px;
 }
+
 .live-site:hover {
-	background-color: rgb(136, 194, 0);
+	background-color: #88c200;
 }
 
 .site-code {
-	background-color: rgb(17, 70, 168);
+	background-color: #1146a8;
 	border-radius: 6px;
 	display: inline-block;
 	cursor: pointer;
@@ -240,38 +284,56 @@ li {
 	padding: 10px 15px;
 	text-decoration: none;
 }
+
 .site-code:hover {
-	background-color: rgb(21, 86, 207);
+	background-color: #1350bf;
 }
 
 /*======================================================*/
 /*======================================================*/
 /*======================================================*/
-
 @media screen and (min-width: 450px) {
 	.info-wrapper {
+		display: -ms-grid;
 		display: grid;
-		grid-template-areas:
-			"exper exper" "contact contact" "skills skills"
-			"next next" "projects projects" "about about";
+		grid-template-areas: "exper exper" "contact contact" "skills skills" "next next" "projects projects" "about about";
+		-ms-grid-columns: 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
 	}
 	.about-me {
+		-ms-grid-row: 6;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
 		grid-area: about;
 	}
 	.contact-me {
+		-ms-grid-row: 2;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
 		grid-area: contact;
 	}
 	.experience {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
 		grid-area: exper;
 	}
 	.skills {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
 		grid-area: skills;
 	}
 	.whats-next {
+		-ms-grid-row: 4;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
 		grid-area: next;
 	}
 	.projects {
+		-ms-grid-row: 5;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
 		grid-area: projects;
 	}
 }
@@ -279,35 +341,47 @@ li {
 /*======================================================*/
 /*======================================================*/
 /*======================================================*/
-
 @media screen and (min-width: 595px) {
 	.info-wrapper {
 		grid-area: info;
 		grid-template-areas: "exper exper" "contact contact" "skills next" "projects projects" "about about";
 	}
 	.projects-container {
+		display: -ms-grid;
 		display: grid;
+		-ms-grid-columns: 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
 		gap: 15px 15px;
 		grid-template-areas: "project-1 project-2" "project-3 project-4" "project-5 project-6";
 	}
-
 	.project-1 {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
 		grid-area: project-1;
 	}
 	.project-2 {
+		-ms-grid-row: 1;
+		-ms-grid-column: 2;
 		grid-area: project-2;
 	}
 	.project-3 {
+		-ms-grid-row: 2;
+		-ms-grid-column: 1;
 		grid-area: project-3;
 	}
 	.project-4 {
+		-ms-grid-row: 2;
+		-ms-grid-column: 2;
 		grid-area: project-4;
 	}
 	.project-5 {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
 		grid-area: project-5;
 	}
 	.project-6 {
+		-ms-grid-row: 3;
+		-ms-grid-column: 2;
 		grid-area: project-6;
 	}
 }
@@ -315,28 +389,33 @@ li {
 /*======================================================*/
 /*======================================================*/
 /*======================================================*/
-
 @media screen and (min-width: 865px) {
 	.info-wrapper {
+		display: -ms-grid;
 		display: grid;
-		grid-template-areas:
-			"exper exper" "contact contact" "skills skills"
-			"next next" "projects projects" "about about";
+		grid-template-areas: "exper exper" "contact contact" "skills skills" "next next" "projects projects" "about about";
+		-ms-grid-columns: 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
 	}
 	.container {
+		display: -ms-grid;
 		display: grid;
 		grid-template-areas: "header info";
+		-ms-grid-columns: 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
 		max-width: 1360px;
 		min-height: 100vh;
 		margin: auto;
 	}
 	.header {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
 		grid-area: header;
 	}
 	.primary-image {
+		-ms-grid-column-align: right;
 		justify-self: right;
+		-ms-flex-item-align: end;
 		align-self: flex-end;
 	}
 	.name,
@@ -352,7 +431,6 @@ li {
 /*======================================================*/
 /*======================================================*/
 /*======================================================*/
-
 @media screen and (min-width: 980px) {
 	.info-wrapper {
 		grid-area: info;
@@ -363,14 +441,10 @@ li {
 /*======================================================*/
 /*======================================================*/
 /*======================================================*/
-
 @media screen and (min-width: 1190px) {
 	.projects-container {
+		display: -ms-grid;
 		display: grid;
 	}
 }
-
-/* 
-#a53400
-#9a3100
-#922e00 orange deeper */
+/*# sourceMappingURL=style2.css.map */
